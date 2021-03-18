@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-4dNpRvNX0c/TdYEbYup8qbjvjaMrgUPh+g4I03CnNtANuv+VAvPL6LqdwzZKV38G" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
+    <title>Smart Home Automation</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+    body {
+        background: #127a8f;
+    }
+
+    .nul {
+        background: #12a9c7;
+        list-style-type: none;
+    }
+
+    .nl {
+        color: white;
+        margin: 0px auto;
+        margin-bottom: 10px;
+
+    }
+
+    .nl:hover {
+        border-bottom: 2px solid var(--bs-blue);
+        padding-bottom: 0px;
+    }
+
+    .heading {
+        font-family: 'Comfortaa', cursive;
+    }
+
+    .tools a {
+        text-decoration: none;
+        font-size: large;
+    }
+
+    .tools a:hover {
+        border-bottom: 2px solid var(--bs-blue);
+        text-shadow: 4px 8px 6px #127a8f;
+        font-size: larger;
+    }
+
+    .container-md {
+        padding-bottom: 70vh;
+    }
+
+    .dtls>div {
+        padding-top: 5vh;
+        padding-bottom: 40vh;
+    }
+
+    .dtime {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .warn,
+    .err {
+        margin-top: 4px;
+        font-family: 'Inconsolata', monospace;
+    }
+
+    .notifbox {
+        padding: 0px 4px;
+    }
+
+
+    @media only screen and (max-width: 760px) {
+        .tool-l {
+            margin-left: 10vw;
+        }
+    }
+</style>
+
+
+
+
+<body>
+    <div class="container-md bg-info">
+        <div class="display-3 text-center py-4 heading">
+            Smart Home Automation
+        </div>
+        <ul class="text-center nul">
+            <li class="nav-item d-md-flex">
+                <a class="nav-link nl" href="#">Home</a>
+                <a class="nav-link nl" href="#">Bed Room</a>
+                <a class="nav-link nl" href="#">Drawing Room</a>
+                <a class="nav-link nl" href="#">Bathroom</a>
+                <a class="nav-link nl" href="#">Kitchen</a>
+            </li>
+        </ul>
+
+        <div class="row dtls">
+            <div class="col-md-4 border text-md-center">
+                <div class="row tools">
+                    <div class="col-12 tool-l"><a href="#">Settings</a></div>
+                    <div class="col-12 tool-l"><a href="#">Help</a></div>
+                    <div class="col-12 tool-l"><a href="#">Contact Us</a></div>
+                </div>
+            </div>
+            <div class="col-md-4 border text-center dtime">
+                11 A.M <br>
+                18th March
+            </div>
+            <div class="col-md-4 border text-center align-items-center h-100">
+                <h4>Notification</h4>
+                <div class="d-flex flex-column  bg-light rounded notifbox">
+                    <div class="warn text-warning">Warning:It's day but lights are on!</div>
+                    <div class="warn text-warning">Warning:You'r using more kwh than the setted goal.</div>
+                    <div class="err text-danger">No One's in the Bed Room , fans are on!</div>
+                    <div class="err text-danger"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
